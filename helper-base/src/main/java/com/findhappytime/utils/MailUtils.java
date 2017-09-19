@@ -38,7 +38,7 @@ public class MailUtils {
             helper.setFrom(fromEmail);
             helper.setTo(toEmail);
             // 邮件抄送
-            String[] emailCc = {"silkroad@quantgroup.cn "};
+            String[] emailCc = {"xxxx@163.com "};
             helper.setCc(emailCc);
             helper.setSubject(title);
             helper.setText(content);
