@@ -150,20 +150,6 @@
 
     </dependencies>
 
-    <!-- 部署时往公司私服上发包, 可以在网址上找到 其他项目引入该包的需要的 XML -->
-    <distributionManagement>
-        <repository>
-            <id>Releases</id>
-            <name>Releases Repository</name>
-            <url>http://repo.quantgroup.cn/nexus/content/repositories/lkb-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>Snapshots</id>
-            <name>Snapshots Repository</name>
-            <url>http://repo.quantgroup.cn/nexus/content/repositories/lkb-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-    <!-- 发包配置 -->
 
     <build>
         <resources>
