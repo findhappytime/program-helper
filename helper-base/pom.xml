@@ -155,12 +155,12 @@
         <repository>
             <id>Releases</id>
             <name>Releases Repository</name>
-            <url>http://repo.quantgroup.cn/nexus/content/repositories/lkb-releases/</url>
+            <url>http://xxx.cn/nexus/content/repositories/lkb-releases/</url>
         </repository>
         <snapshotRepository>
             <id>Snapshots</id>
             <name>Snapshots Repository</name>
-            <url>http://repo.quantgroup.cn/nexus/content/repositories/lkb-snapshots/</url>
+            <url>http://xxx.cn/nexus/content/repositories/lkb-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
     <!-- 发包配置 -->
