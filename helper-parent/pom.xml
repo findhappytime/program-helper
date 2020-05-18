@@ -74,7 +74,7 @@
         <guava.version>28.0-jre</guava.version>
 
         <!-- jackson 版本 -->
-        <jackson.version>2.9.8</jackson.version>
+        <jackson.version>2.11.0</jackson.version>
 
         <!-- fastjson 版本 -20200322因为安全问题去掉依赖  -->
         <!--        <fastjson.version>1.2.60</fastjson.version>-->
