@@ -77,7 +77,7 @@
         <jackson.version>2.9.8</jackson.version>
 
         <!-- fastjson 版本 -20200322因为安全问题去掉依赖  -->
-<!--        <fastjson.version>1.2.60</fastjson.version>-->
+        <!--        <fastjson.version>1.2.60</fastjson.version>-->
 
         <!-- maven生成archetype -->
         <maven-archetype-plugin.version>3.0.1</maven-archetype-plugin.version>
@@ -206,11 +206,11 @@
             </dependency>
 
             <!--fastjson-->
-<!--            <dependency>-->
-<!--                <groupId>com.alibaba</groupId>-->
-<!--                <artifactId>fastjson</artifactId>-->
-<!--                <version>${fastjson.version}</version>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>com.alibaba</groupId>-->
+            <!--                <artifactId>fastjson</artifactId>-->
+            <!--                <version>${fastjson.version}</version>-->
+            <!--            </dependency>-->
 
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>

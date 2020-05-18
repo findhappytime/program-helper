@@ -6,7 +6,7 @@ import fun.findhappytime.thread.learn.thread.BaseCheckThread;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.FutureTask;
 
-public class CheckFutureTask extends FutureTask<Boolean>{
+public class CheckFutureTask extends FutureTask<Boolean> {
 
     private volatile CountDownLatch latch;
 
@@ -21,7 +21,7 @@ public class CheckFutureTask extends FutureTask<Boolean>{
     @Override
     protected void done() {
         try {
-            if(!get()){
+            if (!get()) {
                 afterFail();
             }
         } catch (Exception e) {
@@ -34,8 +34,8 @@ public class CheckFutureTask extends FutureTask<Boolean>{
     /**
      * 在失败后调用
      */
-    private void afterFail(){
-        for(int i = 0 ; i < number - 1 ; i++){
+    private void afterFail() {
+        for (int i = 0; i < number - 1; i++) {
             latch.countDown();
         }
     }

@@ -12,8 +12,8 @@ public class Main {
         final int poolSize = 3;
         final int maxPoolSize = poolSize * 4;
 
-        ThreadPoolExecutor executor = new ThreadPoolExecutor(poolSize,maxPoolSize,
-                1,TimeUnit.MINUTES, new LinkedBlockingQueue<>(),new MyThreadFactory());
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(poolSize, maxPoolSize,
+                1, TimeUnit.MINUTES, new LinkedBlockingQueue<>(), new MyThreadFactory());
 
         AtomicInteger count = new AtomicInteger(1);
 
@@ -26,7 +26,7 @@ public class Main {
 
         executor.execute(() -> {
             try {
-                while (true){
+                while (true) {
                     C_A.acquire();
                     System.out.print(count + ":");
                     System.out.print("A");
@@ -38,7 +38,7 @@ public class Main {
 
         executor.execute(() -> {
             try {
-                while (true){
+                while (true) {
                     A_B.acquire();
                     System.out.print("B");
                     B_C.release();
@@ -49,10 +49,10 @@ public class Main {
 
         executor.execute(() -> {
             try {
-                while (true){
+                while (true) {
                     B_C.acquire();
                     System.out.println("C");
-                    if(count.getAndIncrement() >= 10){
+                    if (count.getAndIncrement() >= 10) {
                         executor.shutdownNow();
                     }
                     C_A.release();

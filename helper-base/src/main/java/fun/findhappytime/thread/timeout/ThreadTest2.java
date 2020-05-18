@@ -27,7 +27,7 @@ public class ThreadTest2 {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
-                    System.out.println(name  + " is interrupted when calculating, will stop...");
+                    System.out.println(name + " is interrupted when calculating, will stop...");
                     // 注意这里如果不return的话，线程还会继续执行，所以任务超时后在这里处理结果然后返回
                     return;
                 }

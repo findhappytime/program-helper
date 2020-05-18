@@ -15,6 +15,7 @@
         <module>helper-parent</module>
         <module>helper-base</module>
         <module>helper-core</module>
+        <module>helper-test</module>
     </modules>
 
 </project>

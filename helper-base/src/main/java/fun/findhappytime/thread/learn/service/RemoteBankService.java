@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class RemoteBankService {
 
-    public boolean checkCredit(int uid){
+    public boolean checkCredit(int uid) {
         boolean flag;
 
         System.out.println("银行信用 - 验证开始");
@@ -16,11 +16,10 @@ public class RemoteBankService {
             return false;
         }
 
-        if(flag){
+        if (flag) {
             System.out.println("银行信用 - 验证成功");
             return true;
-        }
-        else {
+        } else {
             System.out.println("银行信用 - 验证失败");
             return false;
         }

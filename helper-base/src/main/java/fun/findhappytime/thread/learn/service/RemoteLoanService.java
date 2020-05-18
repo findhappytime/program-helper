@@ -2,7 +2,7 @@ package fun.findhappytime.thread.learn.service;
 
 public class RemoteLoanService {
 
-    public boolean checkAuth(int uid){
+    public boolean checkAuth(int uid) {
         boolean flag;
 
         System.out.println("不良贷款 - 验证开始");
@@ -16,11 +16,10 @@ public class RemoteLoanService {
             return false;
         }
 
-        if(flag){
+        if (flag) {
             System.out.println("不良贷款 - 验证成功");
             return true;
-        }
-        else {
+        } else {
             System.out.println("不良贷款 - 验证失败");
             return false;
         }
