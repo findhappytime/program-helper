@@ -1,4 +1,4 @@
-package com.findhappytime.helper.study;
+package com.findhappytime.helper.study.backtracking;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.Stack;
  * @description : 全排列  递归与回溯
  * ⭐️ 需要再理解
  */
-public class FullPermutations {
+public class FullPermutations1 {
 
     public static List<List<Integer>> permute(int[] ins) {
         int length = ins.length;
