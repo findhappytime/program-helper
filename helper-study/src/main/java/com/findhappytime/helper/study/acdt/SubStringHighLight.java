@@ -1,4 +1,4 @@
-package com.findhappytime.helper.study;
+package com.findhappytime.helper.study.acdt;
 
 import com.hankcs.hanlp.collection.AhoCorasick.AhoCorasickDoubleArrayTrie;
 
