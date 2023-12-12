@@ -1,4 +1,4 @@
-package com.findhappytime.helper.study;
+package com.findhappytime.helper.study.tree;
 
 /**
  * @author : zhangshu09
@@ -60,7 +60,6 @@ public class TreeConnect {
             this.val = val;
             this.left = left;
             this.right = right;
-            this.next = next;
         }
     }
 }

@@ -8,7 +8,7 @@ import java.util.Set;
  * @author : zhangshu09
  * @date : Created in 2023/12/5 16:42
  * @description : 无重复字符的最长子串
- * 待理解
+ * 滑动窗口，contains
  */
 public class LongestSubstring {
 
